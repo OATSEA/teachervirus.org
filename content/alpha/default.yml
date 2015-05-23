@@ -2,8 +2,8 @@ title: Get Infected!
 content: |
   <div class="jumbotron"><h1>Android</h1>
   <p><b>Step 1:</b> Download & Install Webserver - <a href="/infect/DroidPHP.apk" >DropidPHP APK</a></p>
-  <p><b>Step 1.5:</b>Download and unzip <a href="/infect/getinfected.php.zip">getinfected<a> and place in htdocs</p> 
-  <p><b>Step 2:</b> Download & Install Teacher Virus - <a href="/infect/teachervirus.apk" >Teacher Virus APK</a></p>
+  <p><b>Step 1.5:</b>Download and unzip <a href="/infect/getinfected.php.zip">getinfected</a> and place in htdocs</p> 
+  <p><b>Step 2:</b> Download & Install Teacher Virus - <a href="/infect/teachervirus.apk">Teacher Virus APK</a></p>
   <p><b>Step 3:</b> Start the DroidPHP webserver and the Open Teacher Virus App and click on getinfected.php</p>
   </div>
   
