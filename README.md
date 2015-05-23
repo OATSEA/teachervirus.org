@@ -1,4 +1,6 @@
-# Stacey 3.0.0
+# Teacher Virus website
+
+The Teachervirus.org website is powered by Stacey 3.0.0
 
 ## Overview
 Stacey takes content from `.yml` files, image files and implied directory structure and generates a website.
@@ -25,6 +27,8 @@ There are an additional two sets of templates which can be found at:
 See <http://staceyapp.com> for more detailed usage information.
 
 ## Copyright/License
+
+Teacher Virus content is Copyright (c) 2015 OATSEA Foundation Ltd
 
 Copyright (c) 2009 Anthony Kolber. See `LICENSE` for details.
 Except [PHP Markdown Extra](http://michelf.com/projects/php-markdown/extra/) which is (c) Michel Fortin (see `/app/parsers/markdown-parser.inc.php` for details) and
