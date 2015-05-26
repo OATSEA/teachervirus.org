@@ -90,7 +90,7 @@ function makeDIR($directory,$debugtxt=0) {
 
 
 //-----------
-// CHECK for Play Dir
+// CHECK for updated Dir
 // -----------
 
 // Check play dir exists or not
@@ -142,11 +142,18 @@ $infectdir = $infect.'/'; // infect directory with trailing slash for URL use
 
 $zipfile = $infectdir.$download_filename;
 
-
-        // Download from github zipball/master as no IP address set
-        $geturl="https://github.com/$username/$repo/zipball/master/";
-        // Issues with curl required use of format config above (e.g. no ' for some reason)
+// Download from github zipball/master as no IP address set
+$geturl="https://github.com/$username/$repo/zipball/master/";
     
+// TRY BY DOWNLOAD BY COPY FIRST:
+$copyflag = copy($geturl,$zipfile);
+
+if ($copyflag === TRUE) {
+    echo "<h3>Download Succeeded</h3><p>Files downloaded using <b>Copy</b></p>";    
+} else { 
+    // COPY didn't work so:
+    // TRY BY CURL
+
     if ($debug) { echo "<p>Will attempt to download via CURL from <b>$geturl</b></p> ";}
     
     // USE CURL to Download ZIP
@@ -159,7 +166,7 @@ $zipfile = $infectdir.$download_filename;
         
     $fp = fopen($zipfile, 'w+'); // or perhaps 'wb'?
     if (!$fp) { 
-        exit("<h3><b>ERROR! Teacher Virus download failed</h3> 
+        exit("<h3><b>ERROR! Download failed</h3> 
         <p>Unable to open temporary file: <b>$zipfile</b>!</p>
         <p>File permission issue maybe?
         "); 
@@ -220,20 +227,13 @@ $zipfile = $infectdir.$download_filename;
     
     if (!$downloadResult) {
         // As download failed delete empty zip file!
-        if ($debug) { echo "<h2>Download with CURL failed - try copy instead</h2>";}
-        
-        $copyflag = copy($geturl,$zipfile);
-
-        if ($copyflag === TRUE) {
-            echo "<h3>Download Succeeded</h3><p>Files downloaded using <b>Copy</b> instead</p>";
-        } else { 
-            echo "<h3>Infection Failed!</h3><p>Couldn't download with either copy or curl</p>";
-            unlink($zipfile);
-            promptForIP();
+        if ($debug) { echo "<h2>Download with CURL failed</h2>";}
+        echo "<h3>Infection Failed!</h3><p>Couldn't download with either copy or curl</p>";
+        unlink($zipfile);
+        promptForIP();
             
-        }
     } // If Download failed using CURL 
-    
+} // END copy or curl
 
 
 // ---------------------
@@ -387,10 +387,6 @@ rrmdir($temp_unzip_path);
 // redirect page to admin page to commence configuration
 // ** TO DO ***
 
-if(chmod("index.php",755)) {
-    echo "<p>index.php security set</p>";
-} else {
-    echo "<p>index.php security NOT set</p>";
-}
+echo "<h1>CHMOD index.php to 755!</h1>";
 
 ?>
