@@ -9,7 +9,7 @@ content: |
         <br>
       </div>
       <div class="row">
-        <center><a class="btn btn-lg btn-primary" href="./get-infected" role="button"> Infect me!</a></center>
+        <center><a class="btn btn-lg btn-primary" href="?/get-infected/" role="button"> Infect me!</a></center>
       </div>
      </div>  
     </div>  
