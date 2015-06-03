@@ -7,13 +7,12 @@ content: |
     <div class="jumbotron"><h1>Android</h1>
   <p><b>Step 1:</b> Download & Install Webserver - <a href="/infect/DroidPHP.apk" >DropidPHP</a></p>
   <p><a class="btn lrg btn-success" href="/infect/DroidPHP.apk" >Get DropidPHP</a></p>
+  <p><b>Step 2:</b> Start the DroidPHP webserver app</p>
   
-  <p><b>Step 2:</b>Download and unzip <a href="/infect/getinfected.php.zip">getinfected</a> and place in htdocs</p> 
-  <p><a class="btn lrg btn-success" href="/infect/getinfected.php.zip">Download getinfected.php</a></p>
-  
-  <p><b>Step 3:</b> Download & Install Teacher Virus - <a href="/infect/teachervirus.apk">Teacher Virus APK</a></p>
+  <p><b>Step 3:</b> Download, Install and Open Teacher Virus - <a href="/infect/teachervirus.apk">Teacher Virus APK</a></p>
   <p><a class="btn lrg btn-success" href="/infect/teachervirus.apk">Get Android Teacher Virus</a></p>
-  <p><b>Step 4:</b> Start the DroidPHP webserver and the Android Open Teacher Virus App</p>
+  
+  <p><b>Note:</b> You will need to authorise installation of non marketplace apps in your Android Settings</p>
   </div>
   
   ##Other Devices?
