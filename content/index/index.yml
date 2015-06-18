@@ -36,6 +36,6 @@ content: |
     ---
     <div  class="jumbotron">
         <h1><b class="glyphicon glyphicon-play-circle"></b> Just Play!</h1>
-        <p>Play Teacher Virus: </p>
-        <p><a class="btn lrg btn-success" href="/play" role="button"><b class="glyphicon glyphicon-play-circle"></b> Play Payloads »</a></p>
+        <p>Play the Teacher Virus Alpha Online: </p>
+        <p><a class="btn lrg btn-success" href="/play" role="button"><b class="glyphicon glyphicon-play-circle"></b> Play »</a></p>
     </div>

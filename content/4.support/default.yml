@@ -3,9 +3,14 @@ title: Support
 content: |
   #Need Support?
   
-  Read the FAQs below 
+  Teacher Virus is currently available as an Alpha.  Please register as an alpha user.
   
-  If no answer there try the forum:
+  Once registered then head over to the forum for support, to make suggestions, provide feedback and raise issues: 
   
-  <p> <a class="btn btn-primary" href="#" role="button">Forum for Teacher Virus Infected »</a></p>
+  <p> <a class="btn btn-primary" href="https://groups.google.com/forum/#!forum/teacher-virus" role="button">Forum for Teacher Virus Infected »</a></p>
+  
+  If you're building payloads have a look at the Teacher Virus Mutator's Forum:
+
+    <p> <a class="btn btn-primary" href="https://groups.google.com/d/forum/teacher-virus-mutators" role="button">Forum for Teacher Virus Mutators »</a></p>
+
   
